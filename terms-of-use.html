@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WiseCar - Terms of Use</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: linear-gradient(135deg, #3419CE 0%, #55D68D 100%);
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: white;
+      box-shadow: 0 10px 40px rgba(52, 25, 206, 0.1);
+      border-radius: 20px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    /* Navigation Dashboard Styles */
+    .dashboard {
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      border-bottom: 3px solid #55D68D;
+      box-shadow: 0 4px 20px rgba(85, 214, 141, 0.1);
+      margin-bottom: 2rem;
+      border-radius: 20px 20px 0 0;
+    }
+    
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      max-width: 100%;
+    }
+    
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #55D68D;
+      text-shadow: 0 2px 4px rgba(85, 214, 141, 0.2);
+    }
+    
+    .tagline {
+      font-size: 0.9rem;
+      color: #666;
+      font-weight: 500;
+      background: linear-gradient(135deg, #3419CE, #55D68D);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    
+    .nav-link {
+      text-decoration: none;
+      color: #666;
+      font-weight: 500;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .nav-link:hover {
+      color: #3419CE;
+      background: linear-gradient(135deg, #3419CE10, #55D68D10);
+      transform: translateY(-2px);
+    }
+    
+    .nav-link.active {
+      color: white;
+      background: linear-gradient(135deg, #3419CE, #55D68D);
+      box-shadow: 0 4px 15px rgba(52, 25, 206, 0.3);
+    }
+    
+    .nav-link.active:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(52, 25, 206, 0.4);
+    }
+    
+    .nav-mobile {
+      display: none;
+    }
+    
+    .mobile-menu-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      flex-direction: column;
+      gap: 4px;
+      display: flex;
+    }
+    
+    .mobile-menu-btn span {
+      width: 25px;
+      height: 3px;
+      background: linear-gradient(135deg, #3419CE, #55D68D);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+    
+    .mobile-nav {
+      display: none;
+      background: white;
+      border-top: 1px solid #f0f0f0;
+      padding: 1rem 2rem;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .mobile-nav.show {
+      display: flex;
+    }
+    
+    .mobile-nav-link {
+      text-decoration: none;
+      color: #666;
+      font-weight: 500;
+      padding: 1rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    
+    .mobile-nav-link:hover {
+      background: linear-gradient(135deg, #3419CE10, #55D68D10);
+      color: #3419CE;
+    }
+    
+    .mobile-nav-link.active {
+      background: linear-gradient(135deg, #3419CE, #55D68D);
+      color: white;
+    }
+    
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #3419CE;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    
+    .last-updated {
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1rem;
+      background: #f5f5f5;
+      border-radius: 20px;
+      display: inline-block;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    h2 {
+      color: #55D68D;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 2.5rem 0 1rem 0;
+      padding-left: 1rem;
+      border-left: 4px solid #55D68D;
+      position: relative;
+    }
+    
+    h3 {
+      color: #3419CE;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.8rem 0;
+    }
+    
+    p {
+      margin-bottom: 1rem;
+      color: #444;
+      font-size: 1rem;
+    }
+    
+    ul, ol {
+      margin: 1rem 0 1rem 2rem;
+    }
+    
+    li {
+      margin-bottom: 0.8rem;
+      color: #444;
+      padding-left: 0.5rem;
+    }
+    
+    .feature-highlight {
+      background: linear-gradient(135deg, #3419CE08 0%, #55D68D08 100%);
+      padding: 1.5rem;
+      border-radius: 15px;
+      border-left: 4px solid #3419CE;
+      margin: 1.5rem 0;
+    }
+    
+    .subscription-plans {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .plan-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 2px solid #f0f0f0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    
+    .plan-title {
+      color: #3419CE;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .plan-price {
+      color: #55D68D;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+    
+    a {
+      color: #3419CE;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    a:hover {
+      color: #55D68D;
+      text-decoration: underline;
+    }
+    
+    .contact-section {
+      background: linear-gradient(135deg, #3419CE 0%, #55D68D 100%);
+      color: white;
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    
+    .contact-section h2 {
+      color: white;
+      border: none;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+    
+    .contact-section a {
+      color: white;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    
+    .warning-box {
+      background: #fff3cd;
+      border: 1px solid #ffeaa7;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+      color: #856404;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+      
+      .nav-container {
+        padding: 1rem;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+      
+      .nav-mobile {
+        display: block;
+      }
+      
+      .logo {
+        font-size: 2rem;
+      }
+      
+      .tagline {
+        font-size: 0.8rem;
+      }
+      
+      .subscription-plans {
+        grid-template-columns: 1fr;
+      }
+      
+      h1 {
+        font-size: 1.8rem;
+      }
+      
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation Dashboard -->
+    <nav class="dashboard">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <div class="logo">WiseCar</div>
+          <span class="tagline">Smart EV Charging</span>
+        </div>
+        <div class="nav-links">
+          <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+          <a href="terms-of-use.html" class="nav-link active">Terms of Use</a>
+        </div>
+        <div class="nav-mobile">
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-nav" id="mobileNav">
+        <a href="privacy-policy.html" class="mobile-nav-link">Privacy Policy</a>
+        <a href="terms-of-use.html" class="mobile-nav-link active">Terms of Use</a>
+      </div>
+    </nav>
+    
+    <h1>Terms of Use</h1>
+    <div class="last-updated">Last updated: November 20, 2025</div>
+    
+    <h2>1. Acceptance of Terms</h2>
+    <p>By downloading, installing, or using the WiseCar mobile application ("App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+    
+    <h2>2. About WiseCar</h2>
+    <p>WiseCar is a comprehensive EV charging management application that enables users to:</p>
+    <div class="feature-highlight">
+      <ul>
+        <li><strong>Smart EV Charging Control:</strong> Monitor and control WiseCar charging devices remotely</li>
+        <li><strong>AI-Powered Assistant:</strong> Get intelligent recommendations and device diagnostics</li>
+        <li><strong>Energy Analytics:</strong> Track charging costs, sessions, and energy efficiency</li>
+        <li><strong>Multi-User Management:</strong> Share charging access with family and friends</li>
+        <li><strong>Smart Scheduling:</strong> Optimize charging times for cost savings</li>
+        <li><strong>NFC Authentication:</strong> Secure device access using NFC cards</li>
+        <li><strong>Home Widgets:</strong> Quick access to charging controls from your device home screen</li>
+      </ul>
+    </div>
+    
+    <h2>3. User Eligibility & Account Requirements</h2>
+    <h3>3.1 Age Requirements</h3>
+    <ul>
+      <li>You must be at least 18 years old to use this App</li>
+      <li>Users under 18 must have explicit parental or guardian consent</li>
+      <li>Parents/guardians are responsible for minors' use of the App</li>
+    </ul>
+    
+    <h3>3.2 Account Security</h3>
+    <ul>
+      <li>You are responsible for maintaining the confidentiality of your login credentials</li>
+      <li>You must provide accurate and current information during registration</li>
+      <li>You agree to notify us immediately of any unauthorized use of your account</li>
+      <li>We support Google Sign-In and Firebase Authentication for secure access</li>
+    </ul>
+    
+    <h2>4. WiseCar Plus Subscription Service</h2>
+    <p>WiseCar offers premium features through our subscription service:</p>
+    
+    <div class="subscription-plans">
+      <div class="plan-card">
+        <div class="plan-title">Monthly Plan</div>
+        <div class="plan-price">$9.99/month</div>
+        <p>Auto-renews monthly</p>
+      </div>
+      <div class="plan-card">
+        <div class="plan-title">Yearly Plan</div>
+        <div class="plan-price">$99.99/year</div>
+        <p>Save 20% - Best Value</p>
+      </div>
+    </div>
+    
+    <h3>4.1 Premium Features Include:</h3>
+    <ul>
+      <li><strong>Multi-User Charger Access:</strong> Up to 15 users per charger (vs 5 for free users)</li>
+      <li><strong>Extended Warranty:</strong> 36 months coverage (vs 24 months for free users)</li>
+      <li><strong>Priority Customer Support:</strong> Direct access to technical assistance</li>
+      <li><strong>Advanced Energy Analytics:</strong> Detailed charging reports and cost insights</li>
+      <li><strong>Smart Home Widget Controls:</strong> Enhanced iOS widget functionality</li>
+      <li><strong>WiseCar Plus Community:</strong> Exclusive access to premium member discussions</li>
+      <li><strong>Exclusive Shop Discounts:</strong> Special pricing on WiseCar products</li>
+    </ul>
+    
+    <h3>4.2 Billing & Cancellation</h3>
+    <ul>
+      <li>Subscriptions are billed through your Apple App Store or Google Play Store account</li>
+      <li>Subscriptions automatically renew unless canceled at least 24 hours before the current period ends</li>
+      <li>You can manage or cancel your subscription through your device's app store settings</li>
+      <li>No refunds for partial subscription periods</li>
+      <li>Upon cancellation, premium features remain active until the current billing period ends</li>
+    </ul>
+    
+    <h2>5. Device Compatibility & Requirements</h2>
+    <ul>
+      <li><strong>iOS:</strong> Requires iOS 14.0 or later</li>
+      <li><strong>Android:</strong> Requires Android API level 21 or higher</li>
+      <li><strong>Network:</strong> Stable internet connection required for device control</li>
+      <li><strong>Hardware:</strong> Compatible with WiseCar charging devices (models WiseCar-Charger-V2 and newer)</li>
+      <li><strong>NFC:</strong> NFC-enabled device required for card authentication features</li>
+    </ul>
+    
+    <h2>6. Acceptable Use Policy</h2>
+    <h3>6.1 Permitted Uses</h3>
+    <ul>
+      <li>Control and monitor your own WiseCar charging devices</li>
+      <li>Share access with authorized users (family, friends, tenants)</li>
+      <li>Use AI assistant for device diagnostics and energy recommendations</li>
+      <li>Participate in community discussions respectfully</li>
+    </ul>
+    
+    <h3>6.2 Prohibited Activities</h3>
+    <ul>
+      <li>Attempting to hack, reverse engineer, or compromise the App or devices</li>
+      <li>Using the App for any illegal or unauthorized purposes</li>
+      <li>Sharing login credentials with unauthorized third parties</li>
+      <li>Interfering with other users' devices or accounts</li>
+      <li>Posting inappropriate content in community sections</li>
+      <li>Commercial use without explicit written permission</li>
+    </ul>
+    
+    <div class="warning-box">
+      <strong>Safety Notice:</strong> Always follow electrical safety guidelines when using charging devices. WiseCar devices should only be installed and maintained by qualified electricians.
+    </div>
+    
+    <h2>7. Data Privacy & Security</h2>
+    <p>Your privacy is important to us. Our data practices include:</p>
+    <ul>
+      <li>Secure cloud storage using Firebase and Google Cloud Platform</li>
+      <li>End-to-end encryption for device communications</li>
+      <li>Limited data collection for service improvement and analytics</li>
+      <li>No sale of personal information to third parties</li>
+      <li>Compliance with GDPR, CCPA, and other applicable privacy laws</li>
+    </ul>
+    <p>For complete details, please review our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    
+    <h2>8. Intellectual Property Rights</h2>
+    <ul>
+      <li>All App content, including software, text, graphics, logos, and trademarks, are owned by WiseCar or our licensors</li>
+      <li>The WiseCar name, logo, and all related marks are trademarks of WiseCar</li>
+      <li>You may not use our intellectual property without explicit written permission</li>
+      <li>You retain ownership of your personal data and charging session information</li>
+    </ul>
+    
+    <h2>9. Limitation of Liability & Disclaimers</h2>
+    <h3>9.1 Service Availability</h3>
+    <p>While we strive for 99.9% uptime, we cannot guarantee uninterrupted service. Factors beyond our control may affect availability including:</p>
+    <ul>
+      <li>Internet connectivity issues</li>
+      <li>Device hardware malfunctions</li>
+      <li>Third-party service outages</li>
+      <li>Scheduled maintenance periods</li>
+    </ul>
+    
+    <h3>9.2 Liability Limitations</h3>
+    <p>To the maximum extent permitted by law:</p>
+    <ul>
+      <li>WiseCar is not liable for any indirect, incidental, or consequential damages</li>
+      <li>Our total liability shall not exceed the amount paid for subscription services in the 12 months preceding the claim</li>
+      <li>We disclaim all warranties except those that cannot be legally excluded</li>
+      <li>You use the App and devices at your own risk</li>
+    </ul>
+    
+    <h2>10. Termination</h2>
+    <h3>10.1 Termination by You</h3>
+    <ul>
+      <li>You may terminate your account at any time through the App settings</li>
+      <li>Cancel subscriptions through your app store account</li>
+      <li>Request account deletion by contacting support</li>
+    </ul>
+    
+    <h3>10.2 Termination by WiseCar</h3>
+    <p>We may suspend or terminate accounts for:</p>
+    <ul>
+      <li>Violation of these Terms</li>
+      <li>Fraudulent or illegal activity</li>
+      <li>Non-payment of subscription fees</li>
+      <li>Extended periods of inactivity (180+ days)</li>
+    </ul>
+    
+    <h2>11. Updates & Modifications</h2>
+    <ul>
+      <li>We regularly update the App to improve functionality and security</li>
+      <li>We may modify these Terms at any time with 30 days' notice</li>
+      <li>Continued use of the App after changes constitutes acceptance</li>
+      <li>Material changes will be prominently announced in the App</li>
+    </ul>
+    
+    <h2>12. Governing Law & Dispute Resolution</h2>
+    <ul>
+      <li>These Terms are governed by the laws of [Your Jurisdiction]</li>
+      <li>Disputes will be resolved through binding arbitration when possible</li>
+      <li>Class action lawsuits are waived to the extent permitted by law</li>
+      <li>Any legal proceedings must be filed within one year of the claim arising</li>
+    </ul>
+    
+    <div class="contact-section">
+      <h2>13. Contact Information</h2>
+      <p>For questions about these Terms, subscription issues, or technical support:</p>
+      <p><strong>Email:</strong> <a href="mailto:support@wisecar.com">support@wisecar.com</a></p>
+      <p><strong>Website:</strong> <a href="https://wisecar.com">www.wisecar.com</a></p>
+      <p><strong>Support Hours:</strong> Monday-Friday, 9 AM - 6 PM EST</p>
+      <p><strong>Emergency Device Support:</strong> 24/7 for WiseCar Plus members</p>
+    </div>
+    
+    <p style="text-align: center; margin-top: 2rem; color: #666; font-size: 0.9rem;">
+      By using WiseCar, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.
+    </p>
+  </div>
+  <script>
+    function toggleMobileMenu() {
+      const mobileNav = document.getElementById('mobileNav');
+      mobileNav.classList.toggle('show');
+      
+      const btn = document.querySelector('.mobile-menu-btn');
+      const spans = btn.querySelectorAll('span');
+      
+      if (mobileNav.classList.contains('show')) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+      } else {
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
